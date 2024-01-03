@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anasayfa</title>
+</head>
+
+<body>
+    <h1>Başlıklar</h1>
+    <ul>
+        {% for baslik_item in basliklar %}
+            <li><a href="/baslik/{{ baslik_item.id }}">{{ baslik_item.baslik }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
